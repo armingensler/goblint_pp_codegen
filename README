@@ -1,0 +1,5 @@
+Note that this requires a modified CIL library which can handle the GOBLINT_PP_VAR_ tokens and generate C code out of it. You can get it at: https://github.com/armingensler/cil/tree/goblint_pp
+
+This will typically not be the version of CIL installed by default in the system. Because of this, a custom secondary install of this library is adviced. To do so, checkout the repository above (branch = goblint_pp) and just use "make" and not "make install" inside the checked out librtary. when building CIL is the easiest way to do this.
+
+The "cilpath" variable in the Makefile has to be adjusted to where the CIL .cmi and .cmx files can be found. This should be the lib/cil/ subdirectory of the repository.
